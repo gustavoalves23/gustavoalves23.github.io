@@ -1,66 +1,116 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portifólio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="divnome">
-        <h1 id = "Nome">Gustavo Alves Miyazaki</h1>
-    </div>
-    <div class="divfoto">
-        <img id = foto src = "foto.jpg" width="270px" alt = "Foto de Gustavo Alves Miyazaki!">
-    </div>
-    <div class="divindice">
-     <h2 id="indiceid"><em>Índice</em></h2>
-    <ul>
-        <li><a href ="#Nome">Meu nome</a></li>
-        <li><a href="#quem-sou-eu">Quem sou eu?</a></li>
-        <li><a href="#Principais Habilidades">Principais Habilidades</a></li>
-        <li><a href="#Blog favorito">Blogs favoritos</a></li>
-    </div>
-    </ul> 
-    <div class="diveu">
-    <h2 id = "quem-sou-eu">Quem sou eu? &#128513;</h2>
-        <ul>
-            <li>Brasileiro &#x1F1E7;&#x1F1F7;</li>
-            <li>São Paulo -SP</li>
-            <li>20 Anos</li>
-            <li>Técnico mecatrônico e estudante de desenvolvimento Web</li>
-        </ul>
-    </div>
-    <div class="divskills">
-        <h2 id = "Principais Habilidades"><em>Principais Habilidades</em></h2>
-        <h3>Soft Skills</h3>
-        <ul>
-            <li>Autoconfiança</li>
-            <li>Aprendizagem ágil</li>
-            <li>Trabalho em Equipe</li>
-            <li>Iniciativa</li>
-            <li>Competitividade</li>
-        </ul>
-        <h3>Hard Skills</h3>
-        <ul>
-            <li>Unix</li>
-            <li>Bash</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ul>
-    </div>
-    <div class="divblog">
-        <h2 id = "Blog favorito"><em>Blogs favoritos</em></h2>
-        <ul>
-        <li><a href = "https://adrenaline.com.br/" target="_blank">Adrenaline</a></li>
-        <li><a href = "https://reddit.com/" target="_blank">Reddit</a></li>
-        <li><a href = "https://9gag.com/" target="_blank">9GAG</a></li>
-        </ul>
-        <br>
-        <a href = "#foto">Veja minha foto novamente!</a>
-    </div>
-</body>
-</html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <title>Document</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header id="cabecalho">
+                <h1 id="titulo">Projeto Lessons Learned</h1>
+            </header>
+            <nav id="navigation_bar">
+                <div class="navitem">
+                    <a href="#minha_foto">Minha Foto!</a>
+                </div>
+                <div class="navitem">
+                    <a href="#tabela">O que estou aprendendo e vou aprender</a>
+                </div>
+                <div class="navitem">
+                    <a href="#licoes_a_aprender">O que vou aprender</a>
+                </div>
+            </nav>
+            <main>
+                <section id="section-picture">
+                    <img src="foto.jpg" id="minha_foto" alt="Minha Foto!">
+                </section>
+                <section id="tabela">
+                    <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Nacionalidade</th>
+                            <th>Cidade</th>
+                        </tr>
+                        <tr>
+                            <td>Gustavo Alves</td>
+                            <td>20</td>
+                            <td>Brasileiro</td>
+                            <td>São Paulo</td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="lists">
+                    <div class="skills-box">  
+                        <div class="topbar">
+                            O que estou aprendendo
+                        </div>
+                    <ul class="pictures-list">
+                        <li><img src="https://icon-library.com/images/bash-icon/bash-icon-24.jpg" alt=""></li>
+                        <li><img src="https://diegomariano.com/wp-content/uploads/2020/08/logo-2582747_640-e1597771254582.png" alt=""></li>
+                        <li><img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt=""></li>
+                        <li><img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png" alt=""></li>
+                        <li><img src="https://cdn.imgbin.com/1/18/9/imgbin-node-js-javascript-database-mongodb-native-MznsPpw43gVjLGaCqfjtzBLP8.jpg" alt=""></li>
+                        <li><img src="https://3.bp.blogspot.com/-xhNpNJJyQhk/XIe4GY78RQI/AAAAAAAAItc/ouueFUj2Hqo5dntmnKqEaBJR4KQ4Q2K3ACK4BGAYYCw/s1600/logo%2Bgit%2Bicon.png" alt=""></li>
+                        <li><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/github-512.png" alt=""></li>
+                        <li><img src="https://miro.medium.com/max/1084/1*L8UwJymGdpTh-jSXhDZO6g.png" alt=""></li>
+                        <li><img src="https://www.pngjoy.com/pngm/428/7834559_blue-circle-icon-zoom-cloud-meetings-transparent-png.png" alt=""></li>
+                        <li><img src="https://udurrani.com/images/lin3.png" alt=""></li>
+                    </ul>
+                    <ol id="licoes_aprendidas" class="names">
+                        <li><a href="https://www.gnu.org/software/bash/" target="_blank">Bash</a></li>
+                        <li><a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">CSS</a></li>
+                        <li><a href="https://www.w3schools.com/html/" target="_blank">HTML</a></li>
+                        <li><a href="https://www.javascript.com/" target="_blank">JavaScript</a></li>
+                        <li><a href="https://nodejs.org/" target="_blank">Node.Js</a></li>
+                        <li><a href="https://git-scm.com/" target="_blank">git</a></li>
+                        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                        <li><a href="https://slack.com/" target="_blank">Slack</a></li>
+                        <li><a href="https://zoom.us/" target="_blank">Zoom</a></li>
+                        <li><a href="https://www.linux.org/" target="_blank">Linux</a></li>
+                    </ol>
+                </div>
+                <div class="skills-box">  
+                    <div class="topbar">
+                        O que vou aprender
+                    </div>
+                <ul class="pictures-list">
+                    <li><img src="https://user-images.githubusercontent.com/18649504/66262823-725cd600-e7be-11e9-9cea-ea14305079db.png" alt=""></li>
+                    <li><img src="https://mpng.subpng.com/20180713/tre/kisspng-react-native-web-application-javascript-google-scholar-logo-5b486117ca2a66.0620183815314701038281.jpg" alt=""></li>
+                    <li><img src="https://walde.co/wp-content/uploads/2016/05/es6-logo.png" alt=""></li>
+                    <li><img src="https://gcollazo.github.io/mongodbapp/assets/img/icon.png" alt=""></li>
+                    <li><img src="https://cdn.imgbin.com/1/18/9/imgbin-node-js-javascript-database-mongodb-native-MznsPpw43gVjLGaCqfjtzBLP8.jpg" alt=""></li>
+                    <li><img src="https://3.bp.blogspot.com/-xhNpNJJyQhk/XIe4GY78RQI/AAAAAAAAItc/ouueFUj2Hqo5dntmnKqEaBJR4KQ4Q2K3ACK4BGAYYCw/s1600/logo%2Bgit%2Bicon.png" alt=""></li>
+                    <li><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/github-512.png" alt=""></li>
+                    <li><img src="https://miro.medium.com/max/1084/1*L8UwJymGdpTh-jSXhDZO6g.png" alt=""></li>
+                    <li><img src="https://www.pngjoy.com/pngm/428/7834559_blue-circle-icon-zoom-cloud-meetings-transparent-png.png" alt=""></li>
+                    <li><img src="https://udurrani.com/images/lin3.png" alt=""></li>
+                </ul>
+                <ul id="licoes_a_aprender" class="names">
+                    <li><a href="https://www.python.org/" target="_blank">Python</a></li>
+                    <li><a href="https://reactjs.org/" target="_blank">React</a></li>
+                    <li><a href="https://es6.io/" target="_blank">ES6</a></li>
+                    <li><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
+                    <li><a href="https://nodejs.org/" target="_blank">Node.Js</a></li>
+                    <li><a href="https://git-scm.com/" target="_blank">git</a></li>
+                    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                    <li><a href="https://slack.com/" target="_blank">Slack</a></li>
+                    <li><a href="https://zoom.us/" target="_blank">Zoom</a></li>
+                    <li><a href="https://www.linux.org/" target="_blank">Linux</a></li>
+                </ul>
+                </div>
+                </section>
+                <section id="articles">
+                    <article class="lado-esquerdo">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, lectus vel iaculis bibendum, lacus orci aliquet leo, sit amet sollicitudin nibh nisl at ipsum. Vestibulum accumsan quam lacus, eu vehicula eros vestibulum vel. Phasellus justo lacus, gravida ut congue sed, facilisis et nisl. In hac habitasse platea dictumst. Sed dui tellus, convallis placerat sem in, condimentum iaculis purus. Morbi ut tellus tristique, dictum ex sit amet.</p>
+                    </article>
+                    <aside class="lado-direito">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, lectus vel iaculis bibendum, lacus orci aliquet leo.
+                    </aside>
+                </section>
+            </main>
+            <footer id="rodape">
+                <h2 id="creditos">Página desenvolvida e estilizada por Gustavo Alves Miyazaki</h2>
+            </footer>
+        </body>
+    </html>
